@@ -3,14 +3,14 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "https://www.gstati
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAbsnrv1V48Afy3kFGF5FjQ7qe2NPWkgKQ",
-    authDomain: "home-ebddf.firebaseapp.com",
-    databaseURL: "https://home-ebddf-default-rtdb.firebaseio.com",
-    projectId: "home-ebddf",
-    storageBucket: "home-ebddf.appspot.com",
-    messagingSenderId: "701662885710",
-    appId: "1:701662885710:web:00cb728e62209719e8501f",
-    measurementId: "G-4L5HSMC0ZZ"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 // Firebase 초기화
