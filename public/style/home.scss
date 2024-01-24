@@ -1,0 +1,498 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+#img1, #img2, #img3{
+    height: 800px;  
+    width: 100%; 
+    background-size: 100% 100%;
+}
+#top{
+    text-align: center;
+    width: 57px;
+    height: 33px;
+    position: fixed; 
+    bottom: 30px; 
+    right: 40px; 
+    z-index: 20; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 10%;
+    #topicon{
+        
+        font-family: 'JalnanGothic';
+        text-decoration-line:none; 
+        font-size: 25px; 
+        color: #000000 ;
+    }
+}
+
+#banner{
+    font-family: 'JalnanGothic'; 
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    #mainname{
+        color: #FFA648;
+    }
+}
+
+#info1{
+    height: 950px;
+    #info-cam{
+        display: flex;
+        justify-content: space-around;
+
+        #info-cam-1{
+            border-radius: 15px;
+            margin-top: 100px;
+            
+            width: 300px;
+            height: 550px;
+            background-color: #000000;
+            
+            #dog-video{
+                margin-top: 25px;
+                margin-left: 10px;
+                width: 280px;
+                height: 485px;
+                
+            }
+        }
+        #info-cam-2{
+            border-radius: 15px;
+            margin-top: 100px;
+            width: 800px;
+            height: 450px;
+            background-color: #000000;
+
+            #cat-video{
+                margin-top: 10px;
+                margin-left: 24px;
+                height: 430px;
+                width: 750px;
+                
+            }
+        }
+    }
+    #info-text{
+        margin-top: 30px;
+        font-size: 35px;
+        font-family: 'JalnanGothic';
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+        color: #FFA648;
+        width: 100%;
+    }
+
+}
+
+#info2{
+    background-color: #000000;
+    height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    #info-photo{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:center;
+        #info-photo-text{
+            
+            color: #FFA648;
+            font-size: 35px;
+            font-family: 'JalnanGothic';
+            margin-left: 35px;
+            
+            margin-right: 35px;
+            text-align: center;
+        }
+        #info-photo-pet{
+            background-image: url('/style/img/pet.png');
+            background-size: 100% 100%;
+            width: 800px;
+            height: 550px;
+            
+        }
+    }
+}
+
+#info3{
+    height: 950px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    #info3main-1{
+        flex-direction: column;
+        width: 45%;
+        #info-audio-1{
+            display: flex;
+            justify-content: center;
+            #info-audio-text{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-family: 'JalnanGothic';
+                font-size: 35px ;
+                color: #FFA648;
+            }
+        }
+        #info-audio-2{
+            display: flex;
+            justify-content: center;
+            #info-audio-photo{
+                width: 60%;
+                height: 600px;
+                background-image: url('/style/img/petaudio.png');
+                background-size: 100% 100%;    
+            }
+            
+        }
+    }
+    #info3main-2{
+        flex-direction: column;
+        width: 45%;
+        #info-feed-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #info-feed-text{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                font-family: 'JalnanGothic';
+                font-size: 35px ;
+                color: #FFA648;
+            }
+        }
+        #info-feed-2{
+            display: flex;
+            justify-content: center;
+            #info-feed-photo{
+                width: 60%;
+                height: 600px;
+                background-image: url('/style/img/petfeed.png');
+                background-size: 100% 100%;
+            }
+            
+        }
+    }
+    
+}
+
+#info4{
+    height: 950px;
+    font-family: 'JalnanGothic';
+    #mapinfo{
+        display: flex; 
+        height: 950px; 
+        align-items: center; 
+        justify-content: center;
+        #map{
+            width: 700px; 
+            height: 460px; 
+            background-image: url('/style/img/map.PNG');
+            background-size: 100% 100%;
+        }
+        #maptext{
+            color: #FFA648;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            width: 500px;
+        }
+    }
+    
+}
+
+#footer{
+    font-family: 'KCCChassam';
+    display: flex; 
+    justify-content: center; 
+    height: 210px; 
+    background-color: rgb(238, 238, 238);
+    #footersize{
+        display: flex;
+        flex-direction: column;  
+        width: 85%; 
+        height: 85%;
+        margin-top: 15px; 
+        border: 2px solid black; 
+        border-right: none; 
+        border-left: none; 
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width:1200px){
+    #info1{
+        #info-cam{
+            #info-cam-1{
+
+                width: 250px;
+                height: 445px;
+                
+                #dog-video{
+                    margin-top: 15px;
+                    margin-left: 1px;
+                    width: 250px;
+                    height: 415px;
+                    
+                }
+            }
+
+            #info-cam-2{
+                width: 550px;
+                height: 350px;
+                #cat-video{
+                    margin-top: 10px;
+                    margin-left: 10px;
+
+                    height: 330px;
+                    width: 530px;              
+                }
+            }
+        }
+    }
+
+    #info4{
+        height: 950px;
+        font-family: 'JalnanGothic';
+        #mapinfo{
+            flex-direction: column;
+            #map{
+                width: 470px;
+            }
+            #maptext{
+                padding: 30px;
+            }
+        }
+    } 
+
+}
+
+@media(max-width:1005px){
+    #info3{
+        #info3main-1{
+            #info-audio-1{
+                #info-audio-text{
+                    font-size: 25px ;
+                }
+            }
+        }
+        #info3main-2{
+            #info-feed-1{
+                #info-feed-text{
+                    font-size: 25px ;
+             
+                } 
+            }
+        }
+    }
+}
+
+@media all and (max-width:1000px) {
+
+
+
+    #banner{
+        height: 200px;
+        font-size: 28px;
+        flex-wrap: wrap;
+    }
+
+    #info1{
+        #info-cam-2{
+            display: none;
+        }
+        #info-text{            
+            font-size: 20px;            
+        }
+    } 
+  
+
+    #info2{
+       
+        #info-photo{
+            display: flex;
+            align-content: center;
+            #info-photo-text{
+                font-size: 20px;
+            }
+            #info-photo-pet{
+                width: 385px;
+                height: 350px;
+
+            }
+        }       
+    }
+}
+
+@media(max-width: 720px){
+    #info3{
+        #info3main-1{
+            #info-audio-1{
+                #info-audio-text{
+                    font-size: 17px ;
+                }
+            }
+            #info-audio-2{
+                #info-audio-photo{
+                    width: 55%;
+                    height: 330px;  
+                }
+                
+            }
+        }
+        #info3main-2{
+            #info-feed-1{
+                #info-feed-text{
+                    font-size: 17px ;
+                }
+            }
+            #info-feed-2{
+                #info-feed-photo{
+                    width: 55%;
+                    height: 330px;
+                }
+                
+            }
+        }
+        
+    }
+
+}
+
+
+
+
+
+@media(max-width: 700px){
+    #carouselExampleAutoplaying{
+        height: 600px;
+        #img1, #img2, #img3{
+            height: 600px;  
+            width: 100%; 
+            background-size: 100% 100%;
+        }    
+    }
+}
+
+@media(max-width: 400px){
+    #carouselExampleAutoplaying{
+        height: 500px;
+        #img1, #img2, #img3{
+            height: 500px;  
+            width: 100%; 
+            background-size: 100% 100%;
+        }    
+    }
+    #banner{
+        height: 180px;
+        font-size: 25px;
+    
+    }
+    
+    #info2{
+
+        #info-photo{
+
+
+            #info-photo-pet{
+                background-image: url('/style/img/pet.png');
+                background-size: 100% 100%;
+                width: 300px;
+                height: 400px;
+                
+            }
+        }
+    }
+
+    #top{
+        bottom: 30px; 
+        right: 30px; 
+        width: 47px;
+        height: 27px;
+        #topicon{
+        
+            font-family: 'JalnanGothic';
+            text-decoration-line:none; 
+            font-size: 20px; 
+            color: #000000 ;
+        }
+    }
+
+    #info3{
+        flex-direction:column ;
+        #info3main-1{
+            width: 100%;
+            margin-top: 150px;
+            #info-audio-1{
+                #info-audio-text{
+                    font-size: 20px ;
+                }
+            }
+            #info-audio-2{
+                #info-audio-photo{
+                    width: 60%;
+                    height: 250px;  
+                }
+                
+            }
+        }
+        #info3main-2{
+            width: 100%;
+            margin-bottom: 150px;
+            #info-feed-1{
+                #info-feed-text{
+                    font-size: 20px ;
+                }
+            }
+            #info-feed-2{
+                #info-feed-photo{
+                    width: 60%;
+                    height: 250px;
+                }
+                
+            }
+        }
+        
+    }
+
+    #info4{
+        height: 950px;
+        font-family: 'JalnanGothic';
+        #mapinfo{
+
+            #map{
+                width: 300px; 
+                height: 460px; 
+                background-image: url('/style/img/map.PNG');
+                background-size: 100% 100%;
+            }
+            #maptext{
+                font-size:  20px;
+                width: 300px;
+            }
+
+        }
+    }
+}

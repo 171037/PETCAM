@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/reset.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+    <script type="text/javascript" src="/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+
+<body>
+    <div id="logo">
+        <h1>PETCAM</h1>
+    </div>
+    <div id="index">
+        <!--팝업창-->
+        <div class="background">
+            <div class="window">
+                <div class="popup">
+                    <div id="button">
+                        <button id="close">X </button>
+                    </div>
+    
+                    <div id="join">
+                        <div>
+                            <h1>회원 가입</h1>
+                        </div>
+                    </div>
+    
+                    <form action="/" method="post" id="form1" >
+                        <div id="email" >
+                            <div>
+                                <p style="margin: 0; width: 110px;">이메일</p>
+                            </div>
+                            <div>
+                                <input id="joinemail" type="email" name="joinemail">
+                            </div>
+                        </div>
+                        
+                        <div id="pass">
+                            <div>
+                                <p style="margin: 0; width: 110px;">비밀번호</p>
+                            </div>
+                            <div>
+                                <input id="joinpass" type="password" name="joinpass">
+                            </div>
+                        </div>
+    
+                        <div id="passcheck">
+                            <div>
+                                <p style="margin: 0; width: 110px;">비밀번호 확인</p>
+                            </div>
+                            <div>
+                                <input id="joinpasscheck" type="password" name="joinpasscheck">
+                            </div>
+                        </div>
+                        
+                        <div id="joincheck">
+                            <button type="submit" id="checkbtn">확인</button>
+                        </div>
+                    </form>
+                    <br>             
+                </div>
+            </div>
+        </div>
+        <!--팝업창  ^-->
+        <div id="all" class="shadow-lg">
+            <div id="login">
+                <br>
+                <div id="bannerpart">
+                    <h1 id="banner">login</h1>
+                </div>     
+                <br>
+                
+        
+                <form action="/login" method="post" id="form2">
+                    <div id="loginpart">
+                        <div id="emailpart">
+                            <input id="email" name="email" placeholder=" email..." type="email" class="rounded-3" style="padding-left: 5px;">
+                        </div>
+                        <div id="passpart">
+                            <input id="password" name="pass" placeholder=" password..." type="password" class="rounded-3" style="padding-left: 5px;">
+                        </div>
+                    </div>
+                    <br>
+                    <div id="loginbtnpart">
+                        <button type="submit" id="loginbtn">로 그 인</button>
+                    </div>
+                </form>
+                    
+                <br>
+                <br>
+                
+                
+                <div id="googlepart">
+                    <button id="google">구글 로그인</button>
+                </div>
+                <br>
+                <div id="joinpart">
+                    <button id="show" >회원가입</button>
+                </div>        
+            </div>
+            <div id="info">
+                <div id="infopart" class="logslide" >               
+                    <div id="infoslide1">
+                        <div id="infoslide1-1">
+                            <h1>PET CAM</h1>
+                        </div>
+                        <div id="infoslide1-2">
+                            <p>24시간 반려 동물을 지켜보자</p>
+                        </div>
+                    </div>
+                    <div id="infoslide2">
+                        <p></p>
+                    </div>
+                    <div id="infoslide3">
+                        <div id="infoslide3-1">
+                            
+                        </div>
+                        <div id="infoslide3-2">
+                            <p>사랑하는 가족을 위한 선택</p>    
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+
+<script type="module" src="/script/google.js"></script>
+<script type="module" src="/script/index.js"></script>
+<script type="module" src="/script/join.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

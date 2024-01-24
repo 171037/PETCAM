@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #dcdcdc48;
+    #logo{
+        font-family: 'JalnanGothic';
+        color: #FFA648;
+        padding: 30px;
+    }
+    #index{
+       display: flex;
+        justify-content: center; 
+        width: 100%; 
+        height: 100%;
+        .popup{
+            #button{
+                #close{
+                float: right; 
+                border: none; 
+                background-color: white; 
+                font-size: x-large; 
+                color: rgb(0, 0, 196);
+                }
+            }       
+            #join{
+                display: flex; 
+                justify-content: center; 
+                width: 500px;
+                color: rgb(0, 0, 196);
+                font-family: 'JalnanGothic';
+            }
+            #email{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+            #pass{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+            #passcheck{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+            }
+            #joincheck{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                font-family: 'JalnanGothic';
+                #checkbtn{
+                    border: none;
+                    background-color: white;
+                    color: rgb(0, 0, 196);
+                    font-size: 25px;
+                }
+            }       
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+    
+            /* 숨기기 */
+            z-index: -1;
+            opacity: 0;
+        }
+    
+        .show {
+            opacity: 1;
+            z-index: 1000;
+            transition: all 0.5s;
+        }
+    
+        .window {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .popup {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    
+            /* 임시 지정 */
+            width: 500px;
+            height: 350px;
+    
+            /* 초기에 약간 아래에 배치 */
+            transform: translate(-50%, -40%);
+        }
+    
+        .show .popup {
+            transform: translate(-50%, -50%);
+            transition: all 0.5s;
+        }
+    
+        #all{
+            display: flex; 
+            width: 700px; 
+            height: 490; 
+            background-color: #FFA648 ; 
+            margin-top: 50px; 
+            border-radius: 20px;
+            border: 1px rgba(0, 0, 0, 0.136) solid;
+            #login{
+                width: 350px;
+                height: 520px;
+                border-radius: 20px;
+                // margin-top: 70px;
+                background-color: #FFA648;
+                #bannerpart{
+                    display: flex;
+                    justify-content: center;
+                    #banner{
+                        font-family: 'Giants-Bold';
+                    }
+                }
+                #loginpart{
+                    margin-top: 30px;
+                    #emailpart{
+                        display: flex;
+                        justify-content: center;
+                        #email{
+                            height: 30px;
+                            width: 255px;
+                            background-color: white;
+                            border: none;
+                        }
+                    }
+                    #passpart{
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 10px;
+                        #password{
+                            height: 30px;
+                            width: 255px;
+                            background-color: white;
+                            border: none;
+                        }
+                    }
+                }
+                
+                #joinpart{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+                    #show{
+                        margin-right: 10px;
+                        color: black;
+                        background-color: rgba(0, 0, 0, 0);
+                        border: none;
+                    }
+                    #show2{
+                        color: black;
+                        background-color: rgba(0, 0, 0, 0);
+                        border: none;
+                    }
+                }
+                #loginbtnpart{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 15px;
+                    #loginbtn{
+                        border: none;
+                        background-color: rgb(255, 179, 37);
+                        color: brown;
+                        width: 90px;
+                        height: 40px;
+                        border-radius: 9px;
+                        font-family: 'JalnanGothic';
+                    }
+                }
+                #googlepart{
+                    display: flex;
+                    justify-content: center;
+                    #google{
+                        width: 280px;
+                        height: 35px;
+                        border: none;
+                        background-image: url('/style/img/123edqw.PNG');
+                        background-size: 100% 100%;
+                        border-radius: 4px;
+                    }
+                }
+                #kakaopart{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3px;
+                    #kakao{
+                        width: 280px;
+                        height: 35px;
+                        border: none;
+                        background-image: url('/style/img/asdasfav.PNG');
+                        background-size: 100% 100%;
+                        border-radius: 4px;
+                    }
+                }      
+            }
+            #info{
+                display: flex; 
+                justify-content: center; 
+                width: 350px; 
+                height: 520px;
+                padding-top: 20px; 
+                border-left: 1px rgba(0, 0, 0, 0.136) solid;
+                
+                #infopart{
+                    background-color: white; 
+                    width: 290px; 
+                    height: 480px; 
+                    // background-image: url('/style/img/30765360_7745556.jpg'); 
+                    background-size: 100% 100%; 
+                    #infoslide1{
+                        background-image: url('/style/img/30765360_7745556.jpg'); 
+                        width: 290px; 
+                        height: 480px; 
+                        background-size: 100% 100%;
+                        #infoslide1-1{
+                            margin-left: 10px; 
+                            margin-top: 10px;
+                            font-family: 'JalnanGothic';   
+                        }
+                        #infoslide1-2{
+                            
+                            margin-left: 10px;
+                            font-family: 'JalnanGothic';
+                        }
+                        
+                    }
+                    #infoslide2{
+                        background-image: url('/style/img/petlogo.png'); 
+                        width: 290px; 
+                        height: 480px; 
+                        background-size: 100% 100%;
+                    }
+                    #infoslide3{
+                        display: flex; 
+                        justify-content: center; 
+                        flex-direction: column;
+                        margin-top: 100px;
+                        width: 290px;
+                        #infoslide3-1{
+                            margin: auto;
+                            width: 200px; 
+                            height: 200px; 
+                            background-image: url('/style/img/animal-care.png'); 
+                            background-size: 100% 100%;
+
+                        }
+                        #infoslide3-2{
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 15px;
+                            font-size: 20px;
+                            font-family: 'JalnanGothic'; 
+                            color: #FFA648;; 
+                        }
+                    }
+                }
+            }
+        }       
+    }       
+}
+
+
+@media (max-width:710px){
+    body{
+        #index{       
+            .popup {
+                width: 400px;
+                height: 320px;
+            }       
+            #all{
+                border: none;
+                width: 350px;
+                height: 550px;
+                display: flex;
+                flex-direction: column-reverse;
+                #login{
+                    #loginpart{
+                        margin-top: 0px;
+                    }
+                    #loginbtnpart{
+                        margin-top: 0px;
+                    }     
+                }
+                #info{
+                    height: 100px;
+                    border-left: 0px;
+                    #infopart{
+                        height: 80px;
+                   
+                        #infoslide1{
+                            height: 80px;
+                            background-image: url('/style/img/love2.PNG');
+                            
+                        }
+                        #infoslide2{
+                            height: 80px;
+                            background-image: url('/style/img/love.PNG');
+                        }
+                        #infoslide3{
+                            margin: 0px;
+                            height: 80px;
+                            // background-image: url('/style/img/love.PNG');
+                            background-size: 100% 100%;
+                            #infoslide3-1{
+                            display: none;
+                            }
+                            #infoslide3-2{
+                                color: #000000;; 
+                            }
+                        }
+                        
+                    }
+                }
+            }       
+        }       
+    }
+}

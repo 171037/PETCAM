@@ -1,0 +1,158 @@
+
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    overflow: hidden;
+    background-color: #43434348;
+    #note{
+        padding-top: 30px;
+
+        width: 1000px;
+        margin: auto;
+
+        // .child2{
+            
+        // }
+        .child{
+            display: flex;
+            justify-content: center;
+        }
+        .images{
+            font-family: 'KCCChassam';
+            font-size: 17px;
+            img{
+                width: 100px;
+                height: 100px
+            }
+ 
+        }
+        
+        .text{
+            font-size: 20px;
+            padding-top: 50px;
+            width: 1000px;
+            height: 650px;
+            // font-size: 20px;
+            // padding-top: 17px;
+            font-family: 'KCCChassam';
+            #mainimg{
+                width: 1000px;
+                height: 550px;
+            }
+        }
+  
+    }
+    #banner{
+        display: flex; 
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        margin-top: 15px;
+        font-family: 'JalnanGothic';
+    }
+    
+}
+
+@media (max-width:1060px) {
+    body{
+        #note{
+            width: 800px;
+            .images{
+                
+                img{
+                    margin: auto;
+                    width: 70px;
+                    height: 70px
+                }
+            }
+            .text{
+                #mainimg{
+                    width: 800px;
+                    height: 550px;
+                }
+            }
+        }
+   
+    }
+}
+
+@media (max-width:855px) {
+    body{
+        #note{
+            width: 650px;
+            .text{
+                #mainimg{
+                    width: 650px;
+                    height: 550px;
+                }
+            }
+        }
+   
+    }
+}
+
+@media (max-width:700px) {
+    body{
+        #note{
+            width: 550px;
+            .text{
+                #mainimg{
+                    width: 550px;
+                    height: 530px;
+                }
+            }
+        }
+   
+    }
+}
+
+@media (max-width:600px) {
+    body{
+        #note{
+            width: 450px;
+            .text{
+                #mainimg{
+                    width: 450px;
+                    height: 500px;
+                }
+            }
+        }
+   
+    }
+}
+
+@media (max-width:360px) {
+    body{ 
+        #note{
+            width: 330px;
+            padding: 0px;
+            .images{
+                display: none;
+            }
+            .text{
+                width: 330px;
+                #mainimg{
+                    width: 330px;
+                    height: 400px;
+                }
+                .child2{
+                    width: 330px;
+                    img{
+                        width: 330px;
+                        height: 400px;
+                    }
+                }
+            }
+        }
+   
+    }
+}

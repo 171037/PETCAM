@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/navbar.css">
+    <script src="https://kit.fontawesome.com/b450a9c1d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home">petcam</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/main">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/photo">Photo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/map">Map</a>
+                </li>
+            </ul>
+            <form class="d-flex" action="/logout">
+                <button class="btn btn-outline-dark" id="logoutbtn" type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+  </nav>
+
+  <div id="block"></div>
+  
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="height: 800px;">
+            <div id="img1" style="background-image: url('style/img/pet_slide1.jpg');"></div>
+          </div>
+      <div class="carousel-item" style="height: 800px;">
+        <div id="img2" style="background-image: url('style/img/pet_slide2.jpg');"></div>
+      </div>
+      <div class="carousel-item" style="height: 800px;">
+        <div id="img3" style="background-image: url('style/img/pet_slide3.jpg');"></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+  
+  <div id="top">
+    <a id="topicon" href="#block">TOP</a>
+  </div>
+
+  <div id="banner">
+    <p>반려 동물이 불안하다면 </p>
+    <p id="mainname">"PET CAM"</p>
+    <p> 을 사용해 보세요</p>
+  </div>
+
+  <div id="info1" class="shadow">
+      <div id="info-cam" >
+          <div id="info-cam-1" class="shadow" data-aos="fade-right">
+              <div class="video" >
+                  <video id="dog-video" autoplay muted loop>
+                      <source src="/style/img/dog.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+          <div id="info-cam-2" class="shadow-lg" data-aos="fade-left">
+              <div class="video">
+                  <video id="cat-video" autoplay muted loop>
+                      <source src="/style/img/cat.mp4" type="video/mp4" />
+                  </video>
+              </div>
+          </div>
+      </div>
+
+      <div id="info-text" data-aos="fade-right" >       
+          <p>스마트 폰과 PC를 이용해 실시간으로 <br> 집에 있는 반려동물을 보자</p>      
+          
+      </div>
+
+  </div>
+
+  <div id="info2" class="shadow">
+    <div id="info-photo">
+      <div id="info-photo-text">
+        <p>촬영 기능으로 반려동물의<br> 순간을 사진으로 남기자</p>
+      </div>
+      <div id="info-photo-pet" class="shadow-lg" data-aos="zoom-in">
+      </div>
+    </div>
+  </div>
+  <div id="info3" class="shadow">
+    <div id="info3main-1">     
+      <div id="info-audio-2">
+        <div id="info-audio-photo" data-aos="fade-down"></div>
+      </div>
+      <div id="info-audio-1">
+        <div id="info-audio-text">
+          <p>반려동물을 소리로 불러보자!</p>
+        </div>
+      </div>
+    </div>
+    <div id="info3main-2">
+      <div id="info-feed-2">
+        <div id="info-feed-photo" data-aos="fade-down"></div>
+      </div>
+      <div id="info-feed-1">
+        <div id="info-feed-text">
+          <p>원격으로 사료를 주자!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="info4" class="shadow-lg">
+    <div id="mapinfo">      
+        <div id="map" data-aos="zoom-in-up" class="shadow"></div>       
+      <div id="maptext">
+        <div style="text-align: center;">
+          <h2>내 위치를 중심으로</h2>
+          <h2>가까운 동물 병원을 찾자</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer">
+    <div id="footersize">
+      <div style="display: flex; flex-direction: column;">
+        <div>
+          <div style="color: #FFA648;">
+            <h3>PET CAM</h3>
+          </div>
+          <div  style="margin-left: 10px;">
+            <div>
+              교육기관 : 미래융합교육원
+            </div>
+            <div>
+              <div>
+                주소 : 대전광역시 서구 계룡로491번길 86 미래융합교육원 &nbsp;<a href="https://map.naver.com/p/directions/-/14180116.8311249,4348680.669904,%EB%AF%B8%EB%9E%98%EC%9C%B5%ED%95%A9%EA%B5%90%EC%9C%A1%EC%9B%90,1477791469,PLACE_POI/-/transit?c=15.00,0,0,0,dh">길찾기</a>
+              </div> 
+            </div>
+            <div>
+              연락처 : 042-471-9222
+            </div>
+            <div>
+              대표 : 홍의선, 전석범
+            </div>
+          </div> 
+        </div>  
+        <div style="display: flex; width: 100%; justify-content: center;">
+          <i class="fa-brands fa-github fa-3x"></i>
+          <i class="fa-brands fa-x-twitter fa-3x"></i>
+          <i class="fa-brands fa-discord fa-3x"></i>
+        </div>        
+      </div>
+    </div> 
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
